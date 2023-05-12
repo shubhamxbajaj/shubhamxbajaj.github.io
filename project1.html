@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Project 1- Smart-Water-Controller</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="Assets\bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/swiper-bundle.min.css" rel="stylesheet">
+    <link href="CSS_Sheet.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="index.html">Personal portfolio</a>
+        </div>
+        <div class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="About_Page.html">About Me</a>
+          </li>
+          <li>
+            <a href="work_experience.html">Work Experience</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact_details.html">Contact</a>
+          </li>
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="https://github.com/shubhamxbajaj/Smart-Water-Controller/raw/main/screenshots/Thumbnail.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://github.com/shubhamxbajaj/Smart-Water-Controller/raw/main/screenshots/Reset%20Page.jpeg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://github.com/shubhamxbajaj/Smart-Water-Controller/raw/main/screenshots/main_menu.jpg" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://github.com/shubhamxbajaj/Smart-Water-Controller/raw/main/screenshots/Live%20water%20graph.jpeg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li>
+                    <strong>Main programming language</strong>: C++
+                  </li>
+                  <li>
+                    <strong>Project date</strong>: 23rd April, 2022
+                  </li>
+                  <li>
+                    <strong>Project URL</strong>: <a href="https://github.com/shubhamxbajaj/Smart-Water-Controller" target="_blank">https://github.com/shubhamxbajaj/Smart-Water-Controller</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Prototype Description</h2>
+                <p> This project uses an ultrasonic sensor and nodemcu along with a relay to automatically control the water level in overhead tanks. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    
+    <script src="Assets/glightbox.min.js"></script>
+    <script src="Assets/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+      /**
+       * Initiate project lightbox 
+       */
+      const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+      });
+     /**
+       * Project details slider
+       */
+      // Create a new Swiper instance for the portfolio details slider
+      new Swiper('.portfolio-details-slider', {
+        // Set the transition speed in milliseconds
+        speed: 400,
+        // Enable looping of the slides
+        loop: true,
+        // Configure autoplay options
+        autoplay: {
+          delay: 3000, // Set the delay between slide transitions
+          disableOnInteraction: false // Allow autoplay even when the user interacts with the slider
+        },
+        // Configure pagination options
+        pagination: {
+          el: '.swiper-pagination', // Specify the element to contain the pagination bullets
+          type: 'bullets', // Use bullet pagination type
+          clickable: true // Allow clicking on the pagination bullets to navigate slides
+        }
+      });
+    </script>
+  </body>
+</html>

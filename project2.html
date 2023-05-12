@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Project 2- Contactless-Facial-recognition-based-visitor-management-system</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="Assets\bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="CSS_Sheet.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="index.html">Personal portfolio</a>
+        </div>
+        <div class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="trial_webpage.html">About Me</a>
+          </li>
+          <li>
+            <a href="work_experience.html">Work Experience</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact_details.html">Contact</a>
+          </li>
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main">
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184867039-0e2dbc5c-9279-493e-8391-1d74b95fe29c.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184867060-b3fd1a12-e003-4dea-8352-3e1e0c8fc03f.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184708211-ad11648b-c484-41ef-a8e2-2c9c718ed62d.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184867597-d64cec78-3232-4fb1-bbda-8b9f82107973.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184714080-c599d9f9-efd8-42fa-ae4a-aacb770e421a.PNG" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://user-images.githubusercontent.com/47914856/184713518-394cc4ed-748b-4ce6-8ce1-689453de43a2.PNG" alt="">
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li>
+                    <strong>Main programming language</strong>: Python
+                  </li>
+                  <li>
+                    <strong>Project date</strong>: August 16th, 2022
+                  </li>
+                  <li>
+                    <strong>Project URL</strong>: <a href="https://github.com/shubhamxbajaj/Contactless-Facial-recognition-based-visitor-management-system" target="_blank">https://github.com/shubhamxbajaj/Contactless-Facial-recognition-based-visitor-management-system</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Prototype Description</h2>
+                <p> This project is a cheap alternative for the expensive visitor management systems which are widely avaiable in the market. This project also have an admin only accessible page and that can be used to reset the database manually(after verification of Admin). Admin page can also be used to monitor all the visitors in real time. We can also view visitors for a particular host as well.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <script src="Assets/glightbox.min.js"></script>
+    <script src="Assets/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+      /**
+       * Initiate project lightbox
+       */
+      // Create a GLightbox instance for the project lightbox
+      const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox' // Specify the selector for project items to be lightboxed
+      });
+      /**
+       * Project details slider
+       */
+      // Create a new Swiper instance for the portfolio details slider
+      new Swiper('.portfolio-details-slider', {
+        // Set the transition speed in milliseconds
+        speed: 400,
+        // Enable looping of the slides
+        loop: true,
+        // Configure autoplay options
+        autoplay: {
+          delay: 3000, // Set the delay between slide transitions
+          disableOnInteraction: false // Allow autoplay even when the user interacts with the slider
+        },
+        // Configure pagination options
+        pagination: {
+          el: '.swiper-pagination', // Specify the element to contain the pagination bullets
+          type: 'bullets', // Use bullet pagination type
+          clickable: true // Allow clicking on the pagination bullets to navigate slides
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS_Sheet.css">
+    <link href="Assets\bootstrap.min.css" rel="stylesheet">
+    <title>Work Experience</title>
+  </head>
+  <body>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="index.html">Personal portfolio</a>
+        </div>
+        <div class="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="About_Page.html">About Me</a>
+          </li>
+          <li>
+            <a href="work_experience.html">Work Experience</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact_details.html">Contact</a>
+          </li>
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <div class="page_title animate-me">Work Experience / Education</div>
+      <section id="resume" class="resume">
+        <div class="container animate-me">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <h4>Shubham Bajaj</h4>
+                <p>
+                  <em>I am a dedicated individual with a passion for IoT, cybersecurity, and AI. I am committed to leveraging the power of innovative technology to connect people and create a sustainable future. Join me on an exciting journey of transformation and impact as we build a connected world of possibilities together.</em>
+                </p>
+                <p>
+                <ul>
+                  <li>(44) 7586603621</li>
+                  <li>sc22sb@leeds.ac.uk</li>
+                </ul>
+              </div>
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelors of Science &amp; Computer Science</h4>
+                <h5>2022-2025</h5>
+                <p>
+                  <em>University of Leeds, UK</em>
+                </p>
+                <p>Modules taken: Introduction to programming, fundamental mathematics concepts, object oriented programming, procedural programming</p>
+              </div>
+              <div class="resume-item">
+                <h4>High school &amp; AISSCE</h4>
+                <h5>2006-2021</h5>
+                <p>
+                  <em>Heritage Xperiential Learning school, India</em>
+                </p>
+                <p>Subjects studied: Computer Science, Mathematics, English, Business Studies, Economic</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Spring Intern @Amazon</h4>
+                <h5>2023-2023</h5>
+                <p>
+                  <em>London, UK </em>
+                </p>
+                <p>
+                <ul>
+                  <li>Selected participant for Amazon Discover: Spring Technology Insight, a prestigious three-day virtual insight experience and mentoring program aimed at computer science and related degree students graduating in 2024.</li>
+                  <li>Engaged in coding exercises, technical workshops, and panel discussions, gaining valuable insights into the day-to-day responsibilities of Software Development Engineers at Amazon. </li>
+                  <li>Expanded professional network and received mentorship from industry experts, enhancing employability and software engineering skills for future internship opportunities.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Summer Intern, Niti Aayog, Government Of India</h4>
+                <h5>2022 - 2022</h5>
+                <p>
+                  <em>New Delhi, India</em>
+                </p>
+                <p>
+                <ul>
+                  <li>Conducted a detailed study on the “Know Your Customer” (KYC) & “Unified Payment Interface” (UPI) systems in India; identified the key focus areas for technological growth and sophistication</li>
+                  <li>Analyzed and developed a detail report on Climate change and artificial intelligence.</li>
+                  <li>Pitched the DigiYatra policy to senior government officials; focused on leveraging artificial intelligence technologies such as facial recognition to ensure seamless air travel in India</li>
+                  <li>Collaborated with an indigenous drone manufacturing start-up; Performed a comprehensive analysis of the functionalities of drones including the manufacturing process and use in the agriculture sector. in India</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // Wait for the DOM content to be loaded before executing the following code
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the work experience section element by its ID
+        const workExperienceSection = document.getElementById("work-experience");
+        // Get all elements with the class "resume-item" and store them in a NodeList
+        const workExperienceItems = document.querySelectorAll(".resume-item");
+        // Define a function to fade in the work experience items
+        function fadeInWorkExperienceItems() {
+          // Iterate over each item in the NodeList of work experience items
+          workExperienceItems.forEach(function(item) {
+            // Add the "fade-in" class to each item
+            item.classList.add("fade-in");
+          });
+        }
+      });
+      
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
